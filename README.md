@@ -1,6 +1,12 @@
 # LoanApplication_Prediction
 
-Loan Applicaiton Prediction 
+Loan Applicaiton Prediction
+
+# Demo
+
+[link](https://loan-app-prediciton.herokuapp.com/)
+
+![Loan App Demo](loan_app.png)
 
 # Content
 
