@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Ayoub Berdeddouch">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Loan Application</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/fontawesome-all.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/swiper.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/magnific-popup.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+
+	
+	
+
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="{{url_for('static', filename='images/logo.svg')}}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="/"><img src="{{url_for('static', filename='images/logo.svg')}}"		alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#Predict">PREDICT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#Visualize">VISUALIZE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#Insights">INSIGHTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+           
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Loan Data <span id="js-rotating"> Analysis, Prediction, Visualization</span></h1>
+                            <p class="p-heading p-large"></p>
+                            <a class="btn-solid-lg page-scroll" href="#Predict">Predict Approval</a>    
+							<!-- <a class="btn-solid-lg page-scroll" href="#Visualize">Visualize Data</a> -->
+
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+<!-- Description -->
+    <div id="Predict" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-binoculars fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Data Analysis</h4>
+                            <p>
+                            &#8226 Size: 400 Kb</br>
+                            &#8226 Shape: 613 Rows & 13 Columns with 1 column as Target</br>
+                            &#8226 Data Source: DPhi</br>
+                            &#8226 Platform: Jupyter & Google Colab</br>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-list-alt fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Data Visualization</h4>
+                            <p>&#8226 Matplotlib &amp; Seaborn to visualize.</br>
+							&#8226 SweetViz for reporting.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-chart-pie fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Default Prediction</h4>
+                            <p>&#8226 Get your loan application approval chances by providing few necessary informations.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+    <!-- Intro -->
+    <div >
+          <!-- Predict -->
+			<div class="container">
+                
+				<div class="row">
+                <div class="col-lg-6">
+                <div class="section-title">Predict</div>    
+                    <div class="text-container">
+                        <h3>The director of SZE bank identified that going through the loan applications to filter the people who can be granted loans or need to be rejected is a tedious and time-consuming process.
+                        </h3>
+
+                        <h4>
+                        He wants to automate it and increase his bank’s efficiency. After talking around a bit, your name pops up as one of the few data scientists who can make this possible within a limited time. Will you help the director out?</h4>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                   
+                    <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+							<a type="submit" class="form-control-submit-button" href="Loan_Application">Loan Application</a>
+                        </div>   
+                    </form>
+                    <!-- end of call me form -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    <!-- end of call me -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+<!-- Services -->
+    <div id="Visualize" class="cards-2">
+        <div class="container">
+            <div class="row">
+			    <div class="card-body">
+
+                <div class="col-lg-12">
+				<div class="section-title">Visualization</div>
+				<h2>Get Knowledge about Loan Dataset</h2>
+
+                
+				 <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Select the report to show the EDA through the whole Data set</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Select JoinReport to show the EDA through Train Data set</div>
+                            </li>
+							<!-- <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Know the total amount of loans issued over the years. Both Fully Paid and Defaulted loans peaked near 2015.</br></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">From the box plot, observe how the interest rates offered for loans vary for different grades. Usually, lower the grade, higher would be the interest rate offered by banks to cover their risk.  </div>
+                            </li>
+							<li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">The graph of average interest rate vs loan amount shows how the defaulted loans always had a higher interest rate across the range of loan amount.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Highest purposes of the disbursed loans for a particular US state chosen</div>
+                            </li> -->
+                        </ul>
+				    <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <a type="submit" class="form-control-submit-button" href="report">Whole Data set Report</a>
+                        </div>
+                        <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <a type="submit" class="form-control-submit-button" href="jointreport">Train Data Report</a>
+                        </div>   
+                    </form>   
+                    </form>
+				</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+<div id="Insights" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                     <div>
+                        <img class="card-image" src="{{url_for('static', filename='images/corr_plot.png')}}"  width="400" height="400" alt="alternative">
+                        <img class="card-image" src="{{url_for('static', filename='images/feature importance.png')}}"  width="600" height="300" alt="alternative">
+                     </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7 col-xl-6">
+                    <div class="text-container">
+                        <div class="section-title">Few Insights.</div>
+                        <h2>Using Machine Learning Model : Logistic Regression</h2>
+                        <p>AI System tries to predict the people who can be granted loans or need to be rejected</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">
+                                We see that the most correlate variables are:
+                                <ul class="list-unstyled li-space-lg"> 
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        ApplicantIncome with LoanAmount)
+                                    </li>
+                                    <li class="media">
+                                    <i class="fas fa-square"></i>Credit_History with Loan_Status).</li>
+                                    
+                                    <li class="media">
+                                    <i class="fas fa-square"></i>LoanAmount is also correlated with CoapplicantIncome</li>
+                                </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <h3>Feature Engineering and and using models LR, Decision Tree, Random Forest</h3>
+                        <p>After using Feature engineering with the introduction of some new features like
+                            <ul class="list-unstyled li-space-lg">
+                                <li><i class="fas fa-square"></i><bold>Total Income</bold>: As discussed during bivariate analysis we will combine the Applicant Income and Coapplicant Income. If the total income is high, chances of loan approval might also be high.</li>
+                                <li><i class="fas fa-square"></i><bold>EMI </bold>:is the monthly amount to be paid by the applicant to repay the loan. Idea behind making this variable is that people who have high EMI’s might find it difficult to pay back the loan. We can calculate the EMI by taking the ratio of loan amount with respect to loan amount term.</li>
+                                <li><i class="fas fa-square"></i><bold>Balance Income </bold>:This is the income left after the EMI has been paid. Idea behind creating this variable is that if this value is high, the chances are high that a person will repay the loan and hence increasing the chances of loan approval.</li>
+                            </ul>
+
+                        </p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">
+                                We can see that:
+                                <ul class="list-unstyled li-space-lg"> 
+                                    <li class="media"><i class="fas fa-square"></i><bold>Credit_History</bold> is the most important feature followed by</li>
+                                    <li><i class="fas fa-square"></i>Balance Income,</li>
+                                    <li><i class="fas fa-square"></i>EMI,</li>
+                                    <li class="media"><i class="fas fa-square"></i>Total Income,</li>
+                                </ul>
+                                </div>
+                            </li>
+                        </ul>
+						         <p>To know more about the data analysis look at this project on <a href= "https://github.com/ayoub-berdeddouch">Github</a></p>
+
+                        <!-- end of counter -->
+
+                    </div> <!-- end of text-container -->      
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of about -->
+
+    <!-- Footer -->
+    <div id=contact class="footer">
+        <div class="container">
+            <div class="row">
+            <img class="card-image" src="{{url_for('static', filename='images/ayoub.jpg')}}"  width="150" height="150" alt="alternative">
+
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Developed by:</h4>
+                        <h2 class="white">Ayoub Berdeddouch</h2>
+                        <p class="white"><i class="fas fa-briefcase">&nbsp;&nbsp;Data Scientist &amp; Associate Cloud Engineer &amp; Ph.D. Candidate</i></p>
+                        <p class="white"><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;Morocco</i></p>
+                        <p class="white"><i class="fa fa-envelope" aria-hidden="true">&nbsp;&nbsp;ayoub.berd@gmail.com</i></p>
+                    
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Connect</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="https://www.linkedin.com/in/ayoub-berdeddouch"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;<a class="white" href="https://github.com/ayoub-berdeddouch"><i class="fab fa-github"></i></a>
+                            </li>
+                            s
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Tools Used</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#">Python</a>
+                            </li>
+                            <li>
+                               <a class="white" href="#">Seaborn &amp; Matplotlib</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#">Scikit-learn</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#">Flask</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#">Scikit-learn</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#">SweetViz</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+    
+    	
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+	<script src="{{url_for('static', filename='js/popper.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='js/morphext.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='js/validator.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+	<script src="{{url_for('static', filename='js/scripts.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+</body>
+</html>
