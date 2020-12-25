@@ -6,7 +6,8 @@ Loan Applicaiton Prediction
 
 [link](https://loan-app-prediciton.herokuapp.com/)
 
-![Loan App Demo](loan_app.png)
+![Loan App](https://github.com/ayoub-berdeddouch/LoanApplication_Prediction/blob/main/loan_app.PNG)
+![Loan App Predict](https://github.com/ayoub-berdeddouch/LoanApplication_Prediction/blob/main/make_pred.PNG)
 
 # Content
 
