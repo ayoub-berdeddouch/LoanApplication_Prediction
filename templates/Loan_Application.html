@@ -287,11 +287,9 @@
                         <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i>F1 SCORE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>ROC AUC</a>
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>ROC AUC</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i>Precision Recall</a>
-                    </li>
+                    
                   
                 </ul>
                 <!-- end of tabs links -->
@@ -302,12 +300,12 @@
                     <!-- Tab -->
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <h4>F1 Score</h4>
-                        <p>The following graph shows the F1 SCORE for different Machine Learning Models. </p>
+                        <p>The following graph shows the F1 SCORE for Logistic Regression Machine Learning Model. </p>
                         
                         <!-- Progress Bars -->
                         <div class="col-lg-5 col-xl-6">
                             <div class="image-container">
-                                <img class="card-image" src="#" alt="alternative">
+                                <img class="card-image" src="{{url_for('static', filename='images/f1score.png')}}" alt="alternative" width="300" height="600">
                             </div> <!-- end of image-container -->
                         </div> <!-- end of col -->
                         <!-- end of progress bars -->
@@ -319,12 +317,12 @@
                     <!-- Tab -->
                     <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                         <h4>ROC AUC Score</h4>
-                        <p>The following graph shows the ROC AUC Curve for different Machine Learning Models. XGBoost gives the best AUC.</p>
+                        <p>The following graph shows the ROC AUC Curve for Logistic Regression Machine Learning Model. It gives the best AUC.</p>
                         
                         <!-- Progress Bars -->
                         <div class="col-lg-5 col-xl-6">
                             <div class="image-container">
-                                <img class="card-image" src="{{url_for('static', filename='images/roc_curve_all_models.png')}}" alt="alternative">
+                                <img class="card-image" src="{{url_for('static', filename='images/lr_fe_auc.png')}}" alt="alternative" width="500" height="500">
                             </div> <!-- end of image-container -->
                         </div> <!-- end of col -->
                         <!-- end of progress bars -->
@@ -332,20 +330,7 @@
                     </div> <!-- end of tab-pane --> 
                     <!-- end of tab -->
 
-                    <!-- Tab -->
-                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <h4>Precission Recall Score </h4>
-                        <p>The following graph shows the Precision Recall Curve for different Machine Learning Models. </p>
-                        
-                       <div class="col-lg-5 col-xl-6">
-                    <div class="image-container">
-                        <img class="card-image" src="{{url_for('static', filename='images/prc_curve_all_models.png')}}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab -->
+                    
                   
                     <!-- end of tab -->
 
@@ -364,9 +349,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true"><i class="fas fa-th"></i>Features</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false"><i class="fas fa-th"></i>Confidence Interval</a>
-                    </li>
+                    
                   
                 </ul>
                 <!-- end of tabs links -->
@@ -376,13 +359,13 @@
 
                     <!-- Tab -->
                     <div class="tab-pane fade show active" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <h4>XGBoost Feature Weights</h4>
-                        <p>The following graph gives the feature importance to predict the Loan Defaults.</p>
+                        <h4>Random Forest Feature Importance After Feature Engineering</h4>
+                        <p>The following graph gives the feature importance to predict the Loan Application Approval.</p>
                         
                         <!-- Progress Bars -->
                          <div class="col-lg-5 col-xl-6">
                     <div class="image-container">
-                        <img class="card-image" src="{{url_for('static', filename='images/features_weight.PNG')}}" alt="alternative">
+                        <img class="card-image" src="{{url_for('static', filename='images/feature importance.PNG')}}" alt="alternative" width="400" height="400">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                         <!-- end of progress bars -->
@@ -390,22 +373,7 @@
                     </div> <!-- end of tab-pane --> 
                     <!-- end of tab -->
 
-                    <!-- Tab -->
-                    <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
-                        <h4>XGBoost Confidence Interval</h4>
-                        <p>As we can see from the graph testing the model on random selection of subset of the lending data, AUC score everytime was around 0.71.</p>
-                        
-                       <div class="col-lg-5 col-xl-6">
-                    <div class="image-container">
-                        <img class="card-image" src="{{url_for('static', filename='images/threshold_Individual.png')}}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab -->
-                  
-
+                    
                 </div> <!-- end of tab-content -->
                 <!-- end of tabs content -->
 
@@ -414,6 +382,24 @@
 		</div>
     </div> <!-- end of tabs -->
     <!-- end of details 2 -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<br>
+    <br>
+
 
     <!-- Footer -->
     <div id=contact class="footer">
