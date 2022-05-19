@@ -1,5 +1,10 @@
 # LoanApplication_Prediction
 
+---
+If you like this project don't forget to star⭐⭐⭐ it.
+---
+
+
 This is application demo of the Datathon form Dphi Machine Learning Bootcamp as Advanced Track [LINK](https://dphi.tech/bootcamps/machine-learning-online-bootcamp/)
 
 ![Dphi Bootcamp](https://github.com/ayoub-berdeddouch/LoanApplication_Prediction/blob/main/dphi_bc_advanced.PNG)
